@@ -11,7 +11,7 @@ import SwiftUI
 struct Catalog_iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(controller: Injection().provideListController())
         }
     }
 }

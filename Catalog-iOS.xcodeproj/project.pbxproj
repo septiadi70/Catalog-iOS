@@ -12,6 +12,17 @@
 		2750EB672A5541A20058DE76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2750EB662A5541A20058DE76 /* Assets.xcassets */; };
 		2750EB6A2A5541A20058DE76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2750EB692A5541A20058DE76 /* Preview Assets.xcassets */; };
 		2750EB772A5541BC0058DE76 /* Catalog_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EB762A5541BC0058DE76 /* Catalog_iOSTests.swift */; };
+		2750EB872A555C4D0058DE76 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = 2750EB862A555C4D0058DE76 /* Products.json */; };
+		2750EB8A2A5562400058DE76 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2750EB882A5562400058DE76 /* Model.xcdatamodeld */; };
+		2750EB8E2A5566050058DE76 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EB8D2A5566050058DE76 /* PersistenceController.swift */; };
+		2750EB922A55D19C0058DE76 /* ProductLocalDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EB912A55D19C0058DE76 /* ProductLocalDataSourceProtocol.swift */; };
+		2750EB942A55D2820058DE76 /* ProductLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EB932A55D2820058DE76 /* ProductLocalDataSource.swift */; };
+		2750EB972A55D6BF0058DE76 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EB962A55D6BF0058DE76 /* ProductModel.swift */; };
+		2750EB9A2A55E04B0058DE76 /* ProductRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EB992A55E04B0058DE76 /* ProductRepositoryProtocol.swift */; };
+		2750EB9C2A55E05B0058DE76 /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EB9B2A55E05B0058DE76 /* ProductRepository.swift */; };
+		2750EB9F2A55E4A90058DE76 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EB9E2A55E4A90058DE76 /* ListController.swift */; };
+		2750EBA22A55EACD0058DE76 /* ProductMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EBA12A55EACD0058DE76 /* ProductMapper.swift */; };
+		2750EBA52A55EDA50058DE76 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EBA42A55EDA50058DE76 /* Injection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +43,17 @@
 		2750EB692A5541A20058DE76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2750EB742A5541BC0058DE76 /* Catalog-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Catalog-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2750EB762A5541BC0058DE76 /* Catalog_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catalog_iOSTests.swift; sourceTree = "<group>"; };
+		2750EB862A555C4D0058DE76 /* Products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
+		2750EB892A5562400058DE76 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		2750EB8D2A5566050058DE76 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		2750EB912A55D19C0058DE76 /* ProductLocalDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductLocalDataSourceProtocol.swift; sourceTree = "<group>"; };
+		2750EB932A55D2820058DE76 /* ProductLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductLocalDataSource.swift; sourceTree = "<group>"; };
+		2750EB962A55D6BF0058DE76 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		2750EB992A55E04B0058DE76 /* ProductRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepositoryProtocol.swift; sourceTree = "<group>"; };
+		2750EB9B2A55E05B0058DE76 /* ProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
+		2750EB9E2A55E4A90058DE76 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		2750EBA12A55EACD0058DE76 /* ProductMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductMapper.swift; sourceTree = "<group>"; };
+		2750EBA42A55EDA50058DE76 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +95,17 @@
 		2750EB612A5541A00058DE76 /* Catalog-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				2750EBA32A55ED970058DE76 /* Injection */,
+				2750EB9D2A55E4800058DE76 /* Pages */,
+				2750EB952A55D6AA0058DE76 /* Models */,
+				2750EB8F2A55D0480058DE76 /* Data */,
+				2750EB8B2A55651E0058DE76 /* Helpers */,
+				2750EB852A555BEE0058DE76 /* Resources */,
 				2750EB622A5541A00058DE76 /* Catalog_iOSApp.swift */,
 				2750EB642A5541A00058DE76 /* ContentView.swift */,
 				2750EB662A5541A20058DE76 /* Assets.xcassets */,
 				2750EB682A5541A20058DE76 /* Preview Content */,
+				2750EB882A5562400058DE76 /* Model.xcdatamodeld */,
 			);
 			path = "Catalog-iOS";
 			sourceTree = "<group>";
@@ -95,6 +124,90 @@
 				2750EB762A5541BC0058DE76 /* Catalog_iOSTests.swift */,
 			);
 			path = "Catalog-iOSTests";
+			sourceTree = "<group>";
+		};
+		2750EB852A555BEE0058DE76 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2750EB862A555C4D0058DE76 /* Products.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2750EB8B2A55651E0058DE76 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2750EBA02A55EAAD0058DE76 /* Mapper */,
+				2750EB8C2A5565F80058DE76 /* CoreData */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2750EB8C2A5565F80058DE76 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2750EB8D2A5566050058DE76 /* PersistenceController.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		2750EB8F2A55D0480058DE76 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2750EB982A55E0250058DE76 /* Repository */,
+				2750EB902A55D0D20058DE76 /* DataSource */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2750EB902A55D0D20058DE76 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				2750EB912A55D19C0058DE76 /* ProductLocalDataSourceProtocol.swift */,
+				2750EB932A55D2820058DE76 /* ProductLocalDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		2750EB952A55D6AA0058DE76 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2750EB962A55D6BF0058DE76 /* ProductModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2750EB982A55E0250058DE76 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2750EB992A55E04B0058DE76 /* ProductRepositoryProtocol.swift */,
+				2750EB9B2A55E05B0058DE76 /* ProductRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		2750EB9D2A55E4800058DE76 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				2750EB9E2A55E4A90058DE76 /* ListController.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		2750EBA02A55EAAD0058DE76 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				2750EBA12A55EACD0058DE76 /* ProductMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		2750EBA32A55ED970058DE76 /* Injection */ = {
+			isa = PBXGroup;
+			children = (
+				2750EBA42A55EDA50058DE76 /* Injection.swift */,
+			);
+			path = Injection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +293,7 @@
 			files = (
 				2750EB6A2A5541A20058DE76 /* Preview Assets.xcassets in Resources */,
 				2750EB672A5541A20058DE76 /* Assets.xcassets in Resources */,
+				2750EB872A555C4D0058DE76 /* Products.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +311,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2750EBA22A55EACD0058DE76 /* ProductMapper.swift in Sources */,
 				2750EB652A5541A00058DE76 /* ContentView.swift in Sources */,
+				2750EB9F2A55E4A90058DE76 /* ListController.swift in Sources */,
 				2750EB632A5541A00058DE76 /* Catalog_iOSApp.swift in Sources */,
+				2750EB9C2A55E05B0058DE76 /* ProductRepository.swift in Sources */,
+				2750EB8A2A5562400058DE76 /* Model.xcdatamodeld in Sources */,
+				2750EB8E2A5566050058DE76 /* PersistenceController.swift in Sources */,
+				2750EB942A55D2820058DE76 /* ProductLocalDataSource.swift in Sources */,
+				2750EB9A2A55E04B0058DE76 /* ProductRepositoryProtocol.swift in Sources */,
+				2750EBA52A55EDA50058DE76 /* Injection.swift in Sources */,
+				2750EB972A55D6BF0058DE76 /* ProductModel.swift in Sources */,
+				2750EB922A55D19C0058DE76 /* ProductLocalDataSourceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +580,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2750EB882A5562400058DE76 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2750EB892A5562400058DE76 /* Model.xcdatamodel */,
+			);
+			currentVersion = 2750EB892A5562400058DE76 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2750EB572A5541A00058DE76 /* Project object */;
 }
