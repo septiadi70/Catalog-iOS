@@ -13,6 +13,7 @@ class ListController: ObservableObject {
     
     @Published var products: [ProductModel] = []
     @Published var search: String = ""
+    @Published var isFavorited: Bool = false
     
     init(repository: ProductRepositoryProtocol) {
         self.repository = repository

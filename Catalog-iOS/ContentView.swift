@@ -59,6 +59,19 @@ struct ContentView: View {
                     }
                 }
             }
+            .navigationTitle("Products")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        controller.isFavorited.toggle()
+                        filterBookmark()
+                    } label: {
+                        Image(systemName: "bookmark.circle")
+                            .foregroundColor(Color(red: 0.4, green: 0.4, blue: 0.4))
+                    }
+                    .font(.system(size: 24))
+                }
+            }
         }
         .searchable(text: $controller.search)
         .onChange(of: controller.search, perform: { newValue in
@@ -76,6 +89,16 @@ struct ContentView: View {
     private func search() {
         Task {
             await controller.loadSearchProducts()
+        }
+    }
+    
+    private func filterBookmark() {
+        Task {
+            if controller.isFavorited {
+                controller.loadFavoritedProducts()
+            } else {
+                controller.loadProducts()
+            }
         }
     }
 }
