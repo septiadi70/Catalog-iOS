@@ -21,7 +21,27 @@ class ListController: ObservableObject {
     func loadProducts() {
         Task {
             do {
+                products = try await repository.getProducts()
+            } catch {
+                print(error)
+            }
+        }
+    }
+    
+    func loadSearchProducts() {
+        Task {
+            do {
                 products = try await repository.getProducts(search: search)
+            } catch {
+                print(error)
+            }
+        }
+    }
+    
+    func loadFavoritedProducts() {
+        Task {
+            do {
+                products = try await repository.getFavoritedProducts()
             } catch {
                 print(error)
             }

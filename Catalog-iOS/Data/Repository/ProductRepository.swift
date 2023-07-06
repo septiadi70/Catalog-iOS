@@ -15,13 +15,21 @@ struct ProductRepository: ProductRepositoryProtocol {
         self.local = local
     }
     
+    func getProducts() async throws -> [ProductModel] {
+        let array = try await local.getProducts(predicate: nil)
+        return array.map { ProductMapper.mapProductToProductModel(product: $0) }
+    }
+    
     func getProducts(search: String) async throws -> [ProductModel] {
-        do {
-            let array = try await local.getProducts(search: search)
-            return array.map { ProductMapper.mapProductToProductModel(product: $0) }
-        } catch {
-            throw error
-        }
+        let predicate = NSPredicate(format: "name CONTAINS[c] %@", search)
+        let array = try await local.getProducts(predicate: predicate)
+        return array.map { ProductMapper.mapProductToProductModel(product: $0) }
+    }
+    
+    func getFavoritedProducts() async throws -> [ProductModel] {
+        let predicate = NSPredicate(format: "isFavorited == YES")
+        let array = try await local.getProducts(predicate: predicate)
+        return array.map { ProductMapper.mapProductToProductModel(product: $0) }
     }
     
     func updateProduct(product: ProductModel,
