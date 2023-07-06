@@ -14,7 +14,7 @@ struct Injection {
         return ProductRepository(local: local)
     }
     
-    func provideListController() -> ListController {
+    @MainActor func provideListController() -> ListController {
         ListController(repository: provideProductRepository())
     }
 }

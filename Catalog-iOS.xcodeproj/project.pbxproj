@@ -23,6 +23,7 @@
 		2750EB9F2A55E4A90058DE76 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EB9E2A55E4A90058DE76 /* ListController.swift */; };
 		2750EBA22A55EACD0058DE76 /* ProductMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EBA12A55EACD0058DE76 /* ProductMapper.swift */; };
 		2750EBA52A55EDA50058DE76 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EBA42A55EDA50058DE76 /* Injection.swift */; };
+		2750EBA72A5654D00058DE76 /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EBA62A5654D00058DE76 /* ProductResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		2750EB9E2A55E4A90058DE76 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		2750EBA12A55EACD0058DE76 /* ProductMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductMapper.swift; sourceTree = "<group>"; };
 		2750EBA42A55EDA50058DE76 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		2750EBA62A5654D00058DE76 /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				2750EBA32A55ED970058DE76 /* Injection */,
-				2750EB9D2A55E4800058DE76 /* Pages */,
+				2750EB9D2A55E4800058DE76 /* Views */,
 				2750EB952A55D6AA0058DE76 /* Models */,
 				2750EB8F2A55D0480058DE76 /* Data */,
 				2750EB8B2A55651E0058DE76 /* Helpers */,
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				2750EB962A55D6BF0058DE76 /* ProductModel.swift */,
+				2750EBA62A5654D00058DE76 /* ProductResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,12 +189,12 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
-		2750EB9D2A55E4800058DE76 /* Pages */ = {
+		2750EB9D2A55E4800058DE76 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				2750EB9E2A55E4A90058DE76 /* ListController.swift */,
 			);
-			path = Pages;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		2750EBA02A55EAAD0058DE76 /* Mapper */ = {
@@ -319,6 +322,7 @@
 				2750EB8A2A5562400058DE76 /* Model.xcdatamodeld in Sources */,
 				2750EB8E2A5566050058DE76 /* PersistenceController.swift in Sources */,
 				2750EB942A55D2820058DE76 /* ProductLocalDataSource.swift in Sources */,
+				2750EBA72A5654D00058DE76 /* ProductResponse.swift in Sources */,
 				2750EB9A2A55E04B0058DE76 /* ProductRepositoryProtocol.swift in Sources */,
 				2750EBA52A55EDA50058DE76 /* Injection.swift in Sources */,
 				2750EB972A55D6BF0058DE76 /* ProductModel.swift in Sources */,

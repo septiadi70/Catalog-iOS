@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 class ListController: ObservableObject {
     private let repository: ProductRepositoryProtocol
     
