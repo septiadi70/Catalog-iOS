@@ -28,6 +28,7 @@
 		27E5D39A2A56C58400B42A06 /* ProductLocalDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5D3992A56C58400B42A06 /* ProductLocalDataSourceTests.swift */; };
 		27E5D39E2A56D69000B42A06 /* MockupProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5D39D2A56D69000B42A06 /* MockupProductRepository.swift */; };
 		27E5D3A02A56D8BF00B42A06 /* ProductRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5D39F2A56D8BF00B42A06 /* ProductRepositoryTests.swift */; };
+		27E5D3A52A56F10D00B42A06 /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5D3A42A56F10D00B42A06 /* GridCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		27E5D3992A56C58400B42A06 /* ProductLocalDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductLocalDataSourceTests.swift; sourceTree = "<group>"; };
 		27E5D39D2A56D69000B42A06 /* MockupProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockupProductRepository.swift; sourceTree = "<group>"; };
 		27E5D39F2A56D8BF00B42A06 /* ProductRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepositoryTests.swift; sourceTree = "<group>"; };
+		27E5D3A42A56F10D00B42A06 /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		2750EB612A5541A00058DE76 /* Catalog-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				27E5D3A32A56F0E100B42A06 /* Components */,
 				2750EBA32A55ED970058DE76 /* Injection */,
 				2750EB9D2A55E4800058DE76 /* Views */,
 				2750EB952A55D6AA0058DE76 /* Models */,
@@ -225,6 +228,14 @@
 			path = Injection;
 			sourceTree = "<group>";
 		};
+		27E5D3A32A56F0E100B42A06 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				27E5D3A42A56F10D00B42A06 /* GridCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -329,6 +340,7 @@
 				2750EBA22A55EACD0058DE76 /* ProductMapper.swift in Sources */,
 				2750EB652A5541A00058DE76 /* ContentView.swift in Sources */,
 				2750EB9F2A55E4A90058DE76 /* ListController.swift in Sources */,
+				27E5D3A52A56F10D00B42A06 /* GridCell.swift in Sources */,
 				2750EB632A5541A00058DE76 /* Catalog_iOSApp.swift in Sources */,
 				2750EB9C2A55E05B0058DE76 /* ProductRepository.swift in Sources */,
 				2750EB8A2A5562400058DE76 /* Model.xcdatamodeld in Sources */,

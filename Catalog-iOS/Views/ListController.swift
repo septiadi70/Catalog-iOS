@@ -28,13 +28,11 @@ class ListController: ObservableObject {
         }
     }
     
-    func loadSearchProducts() {
-        Task {
-            do {
-                products = try await repository.getProducts(search: search)
-            } catch {
-                print(error)
-            }
+    func loadSearchProducts() async {
+        do {
+            products = try await repository.getProducts(search: search)
+        } catch {
+            print(error)
         }
     }
     
@@ -44,6 +42,19 @@ class ListController: ObservableObject {
                 products = try await repository.getFavoritedProducts()
             } catch {
                 print(error)
+            }
+        }
+    }
+    
+    func updateProducts(product: ProductModel) {
+        let i = products.firstIndex(of: product)
+        Task {
+            do {
+                try await repository.updateProduct(product: product,
+                                                   isFavorited: !product.isFavorited)
+                if let index = i {
+                    products[index].isFavorited.toggle()
+                }
             }
         }
     }
