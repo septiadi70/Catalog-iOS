@@ -8,11 +8,6 @@
 import CoreData
 
 protocol ProductLocalDataSourceProtocol {
-    func saveProduct(productId: String,
-                     name: String,
-                     desc: String?,
-                     image: String?,
-                     isFavorited: Bool)
     func getProducts(predicate: NSPredicate?) async throws -> [Product]
     func getProduct(productId id: String) async -> Product?
     func update(product: Product, value: Any, forKey key: String) async throws -> Product

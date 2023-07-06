@@ -32,20 +32,6 @@ struct ProductLocalDataSource: ProductLocalDataSourceProtocol {
         return products
     }
     
-    func saveProduct(productId: String,
-                     name: String,
-                     desc: String?,
-                     image: String?,
-                     isFavorited: Bool) {
-        let product = Product(context: persistenceController.viewContext)
-        product.productId = productId
-        product.name = name
-        product.desc = desc
-        product.image = image
-        product.isFavorited = isFavorited
-        persistenceController.save()
-    }
-    
     func getProduct(productId id: String) async -> Product? {
         let productFetch = NSFetchRequest<Product>(entityName: "Product")
         productFetch.predicate = NSPredicate(format: "productId == %@", id)
