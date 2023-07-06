@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ProductModel: Decodable, Equatable {
+struct ProductModel: Decodable, Equatable, Hashable {
     var productId: String
     var name: String
     var desc: String?

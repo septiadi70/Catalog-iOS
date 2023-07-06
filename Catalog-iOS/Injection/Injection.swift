@@ -9,9 +9,12 @@ import Foundation
 
 struct Injection {
     private func provideProductRepository() -> ProductRepositoryProtocol {
+        ProductRepository(local: provideProductLocalDataSource())
+    }
+    
+    func provideProductLocalDataSource() -> ProductLocalDataSourceProtocol {
         let persistenceController = PersistenceController(modelName: "Model")
-        let local = ProductLocalDataSource(persistenceController: persistenceController)
-        return ProductRepository(local: local)
+        return ProductLocalDataSource(persistenceController: persistenceController)
     }
     
     @MainActor func provideListController() -> ListController {

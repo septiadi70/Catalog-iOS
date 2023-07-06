@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2725D5892A57148C00A4C6C9 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2725D5882A57148C00A4C6C9 /* FileService.swift */; };
+		2725D58B2A57184C00A4C6C9 /* CustomUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2725D58A2A57184C00A4C6C9 /* CustomUserDefault.swift */; };
 		2750EB632A5541A00058DE76 /* Catalog_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EB622A5541A00058DE76 /* Catalog_iOSApp.swift */; };
 		2750EB652A5541A00058DE76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EB642A5541A00058DE76 /* ContentView.swift */; };
 		2750EB672A5541A20058DE76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2750EB662A5541A20058DE76 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2725D5882A57148C00A4C6C9 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FileService.swift; path = ../../../../Documents/FileService.swift; sourceTree = "<group>"; };
+		2725D58A2A57184C00A4C6C9 /* CustomUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUserDefault.swift; sourceTree = "<group>"; };
 		2750EB5F2A5541A00058DE76 /* Catalog-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Catalog-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2750EB622A5541A00058DE76 /* Catalog_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catalog_iOSApp.swift; sourceTree = "<group>"; };
 		2750EB642A5541A00058DE76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2725D5872A57145500A4C6C9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2725D5882A57148C00A4C6C9 /* FileService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		2750EB562A5541A00058DE76 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +119,7 @@
 		2750EB612A5541A00058DE76 /* Catalog-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				2725D5872A57145500A4C6C9 /* Service */,
 				27E5D3A32A56F0E100B42A06 /* Components */,
 				2750EBA32A55ED970058DE76 /* Injection */,
 				2750EB9D2A55E4800058DE76 /* Views */,
@@ -156,6 +169,7 @@
 			children = (
 				2750EBA02A55EAAD0058DE76 /* Mapper */,
 				2750EB8C2A5565F80058DE76 /* CoreData */,
+				2725D58A2A57184C00A4C6C9 /* CustomUserDefault.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -338,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2750EBA22A55EACD0058DE76 /* ProductMapper.swift in Sources */,
+				2725D58B2A57184C00A4C6C9 /* CustomUserDefault.swift in Sources */,
 				2750EB652A5541A00058DE76 /* ContentView.swift in Sources */,
 				2750EB9F2A55E4A90058DE76 /* ListController.swift in Sources */,
 				27E5D3A52A56F10D00B42A06 /* GridCell.swift in Sources */,
@@ -345,6 +360,7 @@
 				2750EB9C2A55E05B0058DE76 /* ProductRepository.swift in Sources */,
 				2750EB8A2A5562400058DE76 /* Model.xcdatamodeld in Sources */,
 				2750EB8E2A5566050058DE76 /* PersistenceController.swift in Sources */,
+				2725D5892A57148C00A4C6C9 /* FileService.swift in Sources */,
 				2750EB942A55D2820058DE76 /* ProductLocalDataSource.swift in Sources */,
 				2750EBA72A5654D00058DE76 /* ProductResponse.swift in Sources */,
 				2750EB9A2A55E04B0058DE76 /* ProductRepositoryProtocol.swift in Sources */,
