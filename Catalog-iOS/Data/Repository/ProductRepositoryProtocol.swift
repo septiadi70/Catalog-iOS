@@ -10,4 +10,5 @@ import CoreData
 
 protocol ProductRepositoryProtocol {
     func getProducts() async throws -> [ProductModel]
+    func updateProduct(product: ProductModel, isFavorited: Bool) async throws
 }

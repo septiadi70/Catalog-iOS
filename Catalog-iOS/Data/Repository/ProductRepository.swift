@@ -23,4 +23,15 @@ struct ProductRepository: ProductRepositoryProtocol {
             throw error
         }
     }
+    
+    func updateProduct(product: ProductModel,
+                       isFavorited: Bool) async throws {
+        let model = await local.getProduct(productId: product.productId)
+        guard let model
+        else {
+            // TODO: Error handle
+            return
+        }
+        _ = try await local.update(product: model, value: isFavorited, forKey: "isFavorited")
+    }
 }

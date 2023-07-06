@@ -14,4 +14,6 @@ protocol ProductLocalDataSourceProtocol {
                      image: String?,
                      isFavorited: Bool)
     func getProducts() async throws -> [Product]
+    func getProduct(productId id: String) async -> Product?
+    func update(product: Product, value: Any, forKey key: String) async throws -> Product
 }

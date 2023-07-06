@@ -16,6 +16,7 @@ struct ProductLocalDataSource: ProductLocalDataSourceProtocol {
     
     func getProducts() async throws -> [Product] {
         let productFetch = NSFetchRequest<Product>(entityName: "Product")
+        productFetch.sortDescriptors = [NSSortDescriptor(key: #keyPath(Product.productId), ascending: true)]
         var products = try persistenceController.viewContext.fetch(productFetch)
         
         if products.isEmpty {
@@ -38,6 +39,22 @@ struct ProductLocalDataSource: ProductLocalDataSourceProtocol {
         product.image = image
         product.isFavorited = isFavorited
         persistenceController.save()
+    }
+    
+    func getProduct(productId id: String) async -> Product? {
+        let productFetch = NSFetchRequest<Product>(entityName: "Product")
+        productFetch.predicate = NSPredicate(format: "productId == %@", id)
+        do {
+            return try persistenceController.viewContext.fetch(productFetch).first
+        } catch {
+            return nil
+        }
+    }
+    
+    func update(product: Product, value: Any, forKey key: String) async throws -> Product {
+        product.setValue(value, forKey: key)
+        try persistenceController.viewContext.save()
+        return product
     }
     
     private func productResponsesFromFromFile() async throws -> [ProductResponse] {
