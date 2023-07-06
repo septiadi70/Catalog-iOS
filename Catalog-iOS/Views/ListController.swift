@@ -12,6 +12,7 @@ class ListController: ObservableObject {
     private let repository: ProductRepositoryProtocol
     
     @Published var products: [ProductModel] = []
+    @Published var search: String = ""
     
     init(repository: ProductRepositoryProtocol) {
         self.repository = repository
@@ -20,7 +21,7 @@ class ListController: ObservableObject {
     func loadProducts() {
         Task {
             do {
-                products = try await repository.getProducts()
+                products = try await repository.getProducts(search: search)
             } catch {
                 print(error)
             }

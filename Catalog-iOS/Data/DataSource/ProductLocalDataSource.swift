@@ -14,9 +14,16 @@ struct ProductLocalDataSource: ProductLocalDataSourceProtocol {
         self.persistenceController = persistenceController
     }
     
-    func getProducts() async throws -> [Product] {
+    func getProducts(search: String) async throws -> [Product] {
         let productFetch = NSFetchRequest<Product>(entityName: "Product")
-        productFetch.sortDescriptors = [NSSortDescriptor(key: #keyPath(Product.productId), ascending: true)]
+        let sortDescriptors = NSSortDescriptor(key: #keyPath(Product.productId),
+                                               ascending: true)
+        productFetch.sortDescriptors = [sortDescriptors]
+        
+        if !search.isEmpty {
+            productFetch.predicate = NSPredicate(format: "name CONTAINS[c] %@", search)
+        }
+        
         var products = try persistenceController.viewContext.fetch(productFetch)
         
         if products.isEmpty {

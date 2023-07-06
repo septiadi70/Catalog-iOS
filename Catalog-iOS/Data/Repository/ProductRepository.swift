@@ -15,9 +15,9 @@ struct ProductRepository: ProductRepositoryProtocol {
         self.local = local
     }
     
-    func getProducts() async throws -> [ProductModel] {
+    func getProducts(search: String) async throws -> [ProductModel] {
         do {
-            let array = try await local.getProducts()
+            let array = try await local.getProducts(search: search)
             return array.map { ProductMapper.mapProductToProductModel(product: $0) }
         } catch {
             throw error
