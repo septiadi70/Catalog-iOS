@@ -28,7 +28,9 @@ struct PersistenceController {
         do {
             try viewContext.save()
         } catch {
-            // TODO: Handle error
+#if DEBUG
+            print(error)
+#endif
         }
     }
 }

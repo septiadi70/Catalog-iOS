@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2725D5892A57148C00A4C6C9 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2725D5882A57148C00A4C6C9 /* FileService.swift */; };
 		2725D58B2A57184C00A4C6C9 /* CustomUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2725D58A2A57184C00A4C6C9 /* CustomUserDefault.swift */; };
+		2725D58D2A571C7100A4C6C9 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2725D58C2A571C7100A4C6C9 /* AppError.swift */; };
 		2750EB632A5541A00058DE76 /* Catalog_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EB622A5541A00058DE76 /* Catalog_iOSApp.swift */; };
 		2750EB652A5541A00058DE76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EB642A5541A00058DE76 /* ContentView.swift */; };
 		2750EB672A5541A20058DE76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2750EB662A5541A20058DE76 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		2725D5882A57148C00A4C6C9 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FileService.swift; path = ../../../../Documents/FileService.swift; sourceTree = "<group>"; };
 		2725D58A2A57184C00A4C6C9 /* CustomUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUserDefault.swift; sourceTree = "<group>"; };
+		2725D58C2A571C7100A4C6C9 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		2750EB5F2A5541A00058DE76 /* Catalog-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Catalog-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2750EB622A5541A00058DE76 /* Catalog_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catalog_iOSApp.swift; sourceTree = "<group>"; };
 		2750EB642A5541A00058DE76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				2750EBA02A55EAAD0058DE76 /* Mapper */,
 				2750EB8C2A5565F80058DE76 /* CoreData */,
 				2725D58A2A57184C00A4C6C9 /* CustomUserDefault.swift */,
+				2725D58C2A571C7100A4C6C9 /* AppError.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				2725D58B2A57184C00A4C6C9 /* CustomUserDefault.swift in Sources */,
 				2750EB652A5541A00058DE76 /* ContentView.swift in Sources */,
 				2750EB9F2A55E4A90058DE76 /* ListController.swift in Sources */,
+				2725D58D2A571C7100A4C6C9 /* AppError.swift in Sources */,
 				27E5D3A52A56F10D00B42A06 /* GridCell.swift in Sources */,
 				2750EB632A5541A00058DE76 /* Catalog_iOSApp.swift in Sources */,
 				2750EB9C2A55E05B0058DE76 /* ProductRepository.swift in Sources */,

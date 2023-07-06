@@ -14,6 +14,7 @@ class ListController: ObservableObject {
     @Published var products: [ProductModel] = []
     @Published var search: String = ""
     @Published var isFavorited: Bool = false
+    @Published var error: Error?
     
     init(repository: ProductRepositoryProtocol) {
         self.repository = repository
@@ -24,7 +25,7 @@ class ListController: ObservableObject {
             do {
                 products = try await repository.getProducts()
             } catch {
-                print(error)
+                self.error = error
             }
         }
     }
@@ -33,7 +34,7 @@ class ListController: ObservableObject {
         do {
             products = try await repository.getProducts(search: search)
         } catch {
-            print(error)
+            self.error = error
         }
     }
     
@@ -42,7 +43,7 @@ class ListController: ObservableObject {
             do {
                 products = try await repository.getFavoritedProducts()
             } catch {
-                print(error)
+                self.error = error
             }
         }
     }
